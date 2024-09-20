@@ -287,7 +287,7 @@ int main()
     TaskManager manager(filename);
     int choice;
 
-    do
+    while (choice != 0)
     {
         displayMenu();
         cin >> choice;
@@ -405,7 +405,7 @@ int main()
         default:
             cout << "Invalid choice. Please try again.\n";
         }
-    } while (choice != 0);
+    }
 
     return 0;
 }
